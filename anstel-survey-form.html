@@ -2,36 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ANSTEL SURVEY FORM</title>
     </head>
     <body>
         <header>
-            <h1 id="title">ANSTEL Customer Survey</h1>
-            <p id="description">Welcome to ANSTEL Barbershop, this survey form is to inquire from customers their satisfaction levels with our service.</p>
+            <h1 id="title">ANSTEL Human Garage Survey Form</h1>
+            <p id="description">Welcome to ANSTEL Human Garage, where you train with purpose, move better, and help your joints at old age.</p>
         </header>
         <main>
             <form id="survey-form">
-                <div>
-                    <label for="name">Full Name:</label>
-                    <input id="name" type="text" name="name" placeholder="Addai Nketiah">
-                </div><br>
-                <div>
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" placeholder="example@email.com">
-                </div><br>
-                <div>
-                    <label for="number">Telephone Number</label>
-                    <input id="number" type="number" name="number" min="6" max="100" placeholder="0249675990">
-                </div><br>
-                <div>
-                    <select id="dropdown">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
+                <section>
+                    <fieldset>
+                    <legend>Personal Information</legend>
+                     <label id="name-label" for="name">Full Name (Required)</label>
+                     <input type="text" id="name" name="name" placeholder="e.g. Addai Nketiah" size="50" required><br><br>
+                     <label id="email-label" for="email">Email Address</label>
+                     <input type="email" id="email" name="email" placeholder="e.g. nktaddai@gmail.com" size="50" required><br><br>
+                     <label id="number-label" for="number">Age</label>
+                     <input type="number" id="number" name="age" placeholder="e.g. 30" min="5" max="100"><br><br>
+                     <label for="dropdown">Sex</label>
+                     <select id="dropdown" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                     </select><br><br>
+                    </fieldset><br><br>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>Are you willing to <strong>Join Us</strong>.</legend>
+                        <label for="yes-option">Yes</label>
+                        <input type="radio" id="yes-option" name="registration" value="yes">
+                        <label for="no-option">No</label>
+                        <input type="radio" id="no-option" name="registration" value="no"><br><br>
+                        <legend>How did you hear about us</legend><br>
+                        <label for="ads">Social Media Ads</label>
+                        <input type="checkbox" id="ads" name="choice" value="ads"><br>
+                        <label for="recommendation">Personal Recommendation</label>
+                        <input type="checkbox" id="recommendation" name="choice" value="recommendation"><br>
+                        <label for="reputation">Reputation</label>
+                        <input type="checkbox" id="reputation" name="choice" value="reputation"><br>
+                        <label for="ratings">Ratings</label>
+                        <input type="checkbox" id="ratings" name="choice" value="ratings"><br><br>
+                        <label for="comments">Additional Comments</label><br>
+                        <textarea id="comments" name="comments" cols="40" rows="20"></textarea><br>
+                        <button type="submit" id="submit">Submit</button>   
+                    </fieldset>
+                </section>
             </form>
         </main>
+        <footer></footer>
     </body>
-    <footer></footer>
 </html>
