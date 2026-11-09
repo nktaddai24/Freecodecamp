@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ANSTEL Checkout Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Checkout</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Your Cart</h2>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Rubik's cube twisted at the button, middle, and top, with different colors.">
+                </figure>
+            </section>
+            <section>
+                <h2>Payment Information</h2>
+                <form>
+                    <label for="card-name">Full Name: <span aria-hidden="true">*</span></label>
+                    <input type="text" id="card-name" name="card-name" required><br><br>
+                    <label for="card-number">Card Number: <span aria-hidden="true">*</span></label>
+                    <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help">
+                    <p id="card-number-help">Enter your 19-digit number</p>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
